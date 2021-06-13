@@ -237,20 +237,21 @@ border: 1px solid #ced4da;
 		border-radius: .25rem;
 		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.input-group-text {
-			font-size: 13px;
-            
+	.input-group-text {
+			font-size: 12px;
+			height: 40px;
 		}
         .fields {
         background-color: white;
         }
 		.para {
-			font-size: 13px !important;
+			font-size: 12px !important;
 			color:#015ea3;
 		}
 		.para2 {
-			font-size: 13px !important;
+			font-size: 12px !important;
 			color:#015ea3;
+			height: 150px;
 		}
 		.input-icon {
 			height: 16px;
@@ -310,12 +311,23 @@ border: 1px solid #ced4da;
 				padding: 10px;
 				min-width: 40px;
 			}
-			.textbox {
+			.textbox-right {
 				background-color: white;
 		opacity: 1;
 		border: 1px solid #ced4da;
-		border-radius: .25rem;
+		border-top-right-radius: .25rem;
+		border-bottom-right-radius: .25rem;
 		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		height: 40px;
+			}
+		.textbox-left {
+				background-color: white;
+		opacity: 1;
+		border: 1px solid #ced4da;
+		border-top-left-radius: .25rem;
+		border-bottom-left-radius: .25rem;
+		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		height: 40px;
 	}
 	
 </style>
@@ -461,222 +473,257 @@ border: 1px solid #ced4da;
 												</td>
 											</tr>
                                         <tr>
-												<td class="p-4">
+												<td class="pl-5 pr-5 pt-4 pb-4">
 														<div class="form-row align-items-center">
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
-																  style="background-color: #e5f6fd; color: #015ea3"
-																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/e50140eb-9746-0d8f-d9d1-584f6d3d9cab.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  Full Name
+														  <div class="col-12">
+															  <div class="row">
+																  <div class="col-5 m-0 p-0 ">
+																	<div
+																	class="input-group-text textbox-left"
+																	style="background-color: #e5f6fd; color: #015ea3"
+																  >
+																	<img
+																	  src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/e50140eb-9746-0d8f-d9d1-584f6d3d9cab.png"
+																	  class="input-icon"
+																	  style="margin-right: 10px"
+																	/>
+																	Full Name
+																  </div>
 																</div>
+																  <div class="col-7 m-0 p-0">
+																	<div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																		<p
+																		  disabled
+																		  type="text"
+																		  class="para"
+																		>{First Name:13}{Last Name:14}</p>
+																	  </div>
+																  </div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{First Name:13}{Last Name:14}</p>
-															  </div>
-															</div>
+														
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/fb093295-f802-883d-5715-a3d366f83ba8.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/fb093295-f802-883d-5715-a3d366f83ba8.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
 																  Phone Number
 																</div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{Phone Number:4}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{Phone Number:4}</p>
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/7954c8c3-2e98-2218-37ab-ab55bebaf724.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  Email
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/7954c8c3-2e98-2218-37ab-ab55bebaf724.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  Email
 																</div>
 															  </div>
-															  
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{Email:5}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																																		>{Email:5}</p>
+
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/3e0913f8-a62b-9342-0f68-47505af375e8.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  City
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/3e0913f8-a62b-9342-0f68-47505af375e8.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  City
 																</div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{City:7}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{City:7}</p>
+
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/5aa380e8-0172-1dee-5c85-3f629ee0000f.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  State
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/5aa380e8-0172-1dee-5c85-3f629ee0000f.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  State
 																</div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{State:8}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{State:8}</p>
+
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/52c1ba58-36dc-8a36-808e-90e4351a4d61.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  Country
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/52c1ba58-36dc-8a36-808e-90e4351a4d61.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  Country
 																</div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-															  <p
-																disabled
-																type="text"
-																class="para"
-															  >{Country:11}</p>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{Country:11}</p>
+
+																	</div>
+																</div>
 															</div>
-															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
 																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/21292cfb-9e2b-57be-c9a2-7f5d05ca6d40.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  Type of Business
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/21292cfb-9e2b-57be-c9a2-7f5d05ca6d40.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  Type of Business
 																</div>
 															  </div>
-															 
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{Type of Business:3}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{Type of Business:3}</p>
+
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="input-group mb-2">
-															  <div class="input-group-prepend" style="width: 40%">
-																<div
-																  class="input-group-text w-100"
-																  style="
-																	background-color: #e5f6fd;
-																	color: #015ea3;
-																	text-align: left;
-																  "
+														  
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-5 m-0 p-0 ">
+																  <div
+																  class="input-group-text textbox-left"
+																  style="background-color: #e5f6fd; color: #015ea3"
 																>
-																  <img
-																	src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/dc9ffa65-4cee-9e26-834e-e93fac665440.png"
-																	class="input-icon"
-																	style="margin-right: 10px"
-																  />
-																  How did you<br />hear 
-																  about us?
+																<img
+																src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/dc9ffa65-4cee-9e26-834e-e93fac665440.png"
+																class="input-icon"
+																style="margin-right: 10px"
+															  />
+															  How did you<br />hear 
+															  about us?
 																</div>
 															  </div>
-															  <div style="padding-top: 6px; padding-left: 10px; width: 60%;" class="textbox">
-																<p
-																  disabled
-																  type="text"
-																  class="para"
-																>{How did you you hear about us?:6}</p>
-															  </div>
+																<div class="col-7 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important;" class="textbox-right">
+																	  <p
+																		disabled
+																		type="text"
+																		class="para"
+																		>{How did you you hear about us?:6}</p>
+
+																	</div>
+																</div>
 															</div>
+															
 														  </div>
-														  <div class="col-12 m-auto">
-															<div class="p-1 addition" style="display: flex; justify-content:
-															center; align-items: center; background-color: #E5F6FD;
-															color: #015EA3; text-align: center;">
-													<label class="pt-2">Additional Comments</label>
-														  </div>										
-														  <div class="input-group mb-2">
-															<div style="padding-top: 6px; padding-left: 10px; width: 100%; height: 80px; border-top: none !important" class="textbox" >
-																<p
-																  disabled
-																  type="text"
-																  class="para2"
-																>{Question / Comment:10}</p>
+														  <div class="col-12 mt-2">
+															<div class="row">
+																<div class="col-12 m-0 p-0 ">
+																	<div class="p-1 addition" style="display: flex; justify-content:
+																	center; align-items: center; background-color: #E5F6FD;
+																	color: #015EA3; text-align: center;">
+																		<label class="pt-2">Additional Comments</label>
+																  </div>
 															  </div>
+																<div class="col-12 m-0 p-0">
+																  <div style="padding-top: 3px; padding-left: 10px; width: 100% !important; height: 140px;" class="textbox-right">
+																	<p
+																	disabled
+																	type="text"
+																	class="para2"
+																  >{Question / Comment:10}</p>
+																</div>
+																</div>
+															</div>
+															
 														  </div>
+
+														  
+													
+														
 														</div>
 												</td>
 											</tr>
