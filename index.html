@@ -1,77 +1,249 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	<title>Notify 2</title>
-	<link
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>Notify 2</title>
+    <link
 		  rel="stylesheet"
 		  href="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/files/940ef84e-c1a1-e5f8-cba3-d671c09afec4/bootstrap.min.css"
 		/>
-		
-	<style type="text/css">
-	
-	div, p, a, li, td { -webkit-text-size-adjust:none; }
-	
-	*{
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	}
-	
-	.ReadMsgBody
-	{width: 100%; background-color: #ffffff;}
-	.ExternalClass
-	{width: 100%; background-color: #ffffff;}
-	body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;}
-	html{width: 100%; background-color: #ffffff;}
-	
-	@font-face {font-family: 'proxima_novalight';src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
-	
-	@font-face {font-family: 'proxima_nova_rgregular'; src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
-	
-	@font-face {font-family: 'proxima_novasemibold';src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
-		
-	@font-face {font-family: 'proxima_nova_rgbold';src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
-		
-	@font-face {font-family: 'proxima_novathin';src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
-	   
-	@font-face {font-family: 'proxima_novaextrabold';src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot');src: url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2') format('woff2'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}  
-	
-	
-	p {padding: 0!important; margin-top: 0!important; margin-right: 0!important; margin-bottom: 0!important; margin-left: 0!important; }
-	
-	.hover:hover {opacity:0.85;filter:alpha(opacity=85);}
-	
-	.image73 img {width: 73px; height: auto;}
-	.image42 img {width: 42px; height: auto;}
-	.image400 img {width: 400px; height: auto;}
-	.icon49 img {width: 49px; height: auto;}
-	.image113 img {width: 113px; height: auto;}
-	.image70 img {width: 70px; height: auto;}
-	.image67 img {width: 67px; height: auto;}
-	.image80 img {width: 80px; height: auto;}
-	.image35 img {width: 35px; height: auto;}
-	.icon49 img {width: 49px; height: auto;}
-	
-	</style>
-	
-	
-	
-	<style type="text/css"> @media only screen and (max-width: 479px){
-			body{width:auto!important;}
-			table[class=full] {width: 100%!important; clear: both; }
-			table[class=mobile] {width: 100%!important; padding-left: 30px; padding-right: 30px; clear: both; }
-			table[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
-			td[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
-			*[class=erase] {display: none;}
-			*[class=buttonScale] {float: none!important; text-align: center!important; display: inline-block!important; clear: both;}
-			.image400 img {width: 100%!important; height: auto;}
-			}
-	 </style> 
-	<style>
-		.input-group-text {
-			font-size: 13px;
+    
+  <style type="text/css">
+		div,p,a,li,td{
+			-webkit-text-size-adjust:none;
 		}
+		*{
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+		.ReadMsgBody{
+			width:100%;
+			background-color:#ffffff;
+		}
+		.ExternalClass{
+			width:100%;
+			background-color:#ffffff;
+		}
+	@font-face {font-family:'proxima_novalight';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_nova_rgregular';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novasemibold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_nova_rgbold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novathin';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novaextrabold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2) format("woff2"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+		body{
+			width:100%;
+			height:100%;
+			background-color:#ffffff;
+			margin:0;
+			padding:0;
+			-webkit-font-smoothing:antialiased;
+		}
+		html{
+			width:100%;
+			background-color:#ffffff;
+		}
+		p{
+			padding:0 !important;
+			margin-top:0 !important;
+			margin-right:0 !important;
+			margin-bottom:0 !important;
+			margin-left:0 !important;
+		}
+		.hover:hover{
+			opacity:.85;
+			filter:alpha(opacity=85);
+		}
+		.image73 img{
+			width:73px;
+			height:auto;
+		}
+		.image42 img{
+			width:42px;
+			height:auto;
+		}
+		.image400 img{
+			width:400px;
+			height:auto;
+		}
+		.icon49 img{
+			width:49px;
+			height:auto;
+		}
+		.image113 img{
+			width:113px;
+			height:auto;
+		}
+		.image70 img{
+			width:70px;
+			height:auto;
+		}
+		.image67 img{
+			width:67px;
+			height:auto;
+		}
+		.image80 img{
+			width:80px;
+			height:auto;
+		}
+		.image35 img{
+			width:35px;
+			height:auto;
+		}
+		.icon49 img{
+			width:49px;
+			height:auto;
+		}
+		div,p,a,li,td{
+			-webkit-text-size-adjust:none;
+		}
+		*{
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+		.ReadMsgBody{
+			width:100%;
+			background-color:#ffffff;
+		}
+		.ExternalClass{
+			width:100%;
+			background-color:#ffffff;
+		}
+	@font-face {font-family:'proxima_novalight';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-light-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_nova_rgregular';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-regular-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novasemibold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-semibold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_nova_rgbold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-bold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novathin';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-thin-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+	@font-face {font-family:'proxima_novaextrabold';        src:url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot);        src:url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff2) format("woff2"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.woff) format("woff"),url(http://rocketway.net/themebuilder/products/font/proximanova-extrabold-webfont.ttf) format("truetype");        font-weight:normal;        font-style:normal;}
+		body{
+			width:100%;
+			height:100%;
+			background-color:#ffffff;
+			margin:0;
+			padding:0;
+			-webkit-font-smoothing:antialiased;
+		}
+		html{
+			width:100%;
+			background-color:#ffffff;
+		}
+		p{
+			padding:0 !important;
+			margin-top:0 !important;
+			margin-right:0 !important;
+			margin-bottom:0 !important;
+			margin-left:0 !important;
+		}
+		.hover:hover{
+			opacity:.85;
+			filter:alpha(opacity=85);
+		}
+		.image73 img{
+			width:73px;
+			height:auto;
+		}
+		.image42 img{
+			width:42px;
+			height:auto;
+		}
+		.image400 img{
+			width:400px;
+			height:auto;
+		}
+		.icon49 img{
+			width:49px;
+			height:auto;
+		}
+		.image113 img{
+			width:113px;
+			height:auto;
+		}
+		.image70 img{
+			width:70px;
+			height:auto;
+		}
+		.image67 img{
+			width:67px;
+			height:auto;
+		}
+		.image80 img{
+			width:80px;
+			height:auto;
+		}
+		.image35 img{
+			width:35px;
+			height:auto;
+		}
+		.icon49 img{
+			width:49px;
+			height:auto;
+		}
+	@media only screen and (max-width: 479px){
+		body{
+			width:auto !important;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=full]{
+			width:100% !important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=mobile]{
+			width:100% !important;
+			padding-left:30px;
+			padding-right:30px;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		table[class=fullCenter]{
+			width:100% !important;
+			text-align:center !important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		td[class=fullCenter]{
+			width:100% !important;
+			text-align:center !important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		[class=erase]{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 479px){
+		[class=buttonScale]{
+			float:none !important;
+			text-align:center !important;
+			display:inline-block !important;
+			clear:both;
+		}
+
+}	@media only screen and (max-width: 479px){
+		.image400 img{
+			width:100% !important;
+			height:auto;
+		}
+
+}</style>
+<style>
+.addition {
+border: 1px solid #ced4da;
+		border-radius: .25rem;
+		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input-group-text {
+			font-size: 13px;
+            
+		}
+        .fields {
+        background-color: white;
+        }
 		.para {
 			font-size: 13px !important;
 			color:#015ea3;
@@ -139,58 +311,60 @@
 				min-width: 40px;
 			}
 			.textbox {
-				background-color: #e9ecef;
+				background-color: white;
 		opacity: 1;
 		border: 1px solid #ced4da;
 		border-radius: .25rem;
 		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	
-	
-			
-	</style>
-	
-	</head>
-	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
-		<img
+</style>
+</head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+  <img
 		src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/862fce60-ec0c-1cf9-391c-afd0d8ce61f8.png"
 		style="position: absolute; top: 0; left: 0"
 		height="100px"
 	  />
-	<div class="ui-sortable" id="sort_them"> 
-	<!-- Notification 1  -->
-	<div style="display: none;" id="element_08090038786176592"></div><!-- End Notification 1 -->
-	
-	<!-- Notification 2  -->
-	<div style="display: none;" id="element_09100676192902029"></div><!-- End Notification 2 -->
-	
-	<!-- Notification 3  -->
-	<div style="display: none;" id="element_012434233748354018"></div><!-- End Notification 3 -->
-	
-	<!-- Notification 4  -->
-	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full"  bgcolor="#69b8f1"style="background-color: rgb(242, 244, 249);">
-		<tr>
-			<td align="center" style="background-image: url('images/not4_bg_image.jpg'); -webkit-background-size: cover; background-size: cover; background-color: rgb(242, 244, 249); background-position: center center; background-repeat: no-repeat;" id="not4ChangeBG">
-				
-				
-				<!-- Mobile Wrapper -->
-				<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
-					<tr>
-						<td width="100%" align="center">
-						
-							<!-- SORTABLE -->
-							<div class="sortable_inner ui-sortable">
-													
-							<!-- Space -->
-							<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
-								<tr>
-									<td width="100%" height="50"></td>
-								</tr>
-							</table><!-- End Space -->
-							
-							<!-- Space -->
-							<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
-								<tr>
+    <div class="ui-sortable" id="sort_them">
+      <!-- Notification 1  -->
+      <div style="display:none;" id="element_08532009210903198"></div>
+      <!-- End Notification 1 -->
+      <!-- Notification 2  -->
+      <div style="display:none;" id="element_03602989208884537"></div>
+      <!-- End Notification 2 -->
+      <!-- Notification 3  -->
+      <div style="display:none;" id="element_004846337018534541"></div>
+      <!-- End Notification 3 -->
+      <!-- Notification 4  -->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" bgcolor="#69b8f1" style="background-color:rgb(242, 244, 249);">
+        <tbody>
+          <tr mc:repeatable>
+            <td align="center" style="background-image:url('https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/b1d2152c-32d6-f47e-a652-743360cd3dbc.jpg');-webkit-background-size:cover;background-size:cover;background-color:rgb(242, 244, 249);background-position:center;background-repeat:no-repeat;" id="not4ChangeBG">
+              <div mc:hideable>
+                
+                <!-- Mobile Wrapper -->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+                  <tbody>
+                    <tr>
+                      <td width="100%" align="center">
+                        
+                        <!-- SORTABLE -->
+                        <div class="sortable_inner ui-sortable">
+                          
+                          <!-- Space -->
+                          <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+                            <tbody>
+                              <tr>
+                                <td width="100%" height="50"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- End Space -->
+                          <!-- Space -->
+                          <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+                            <tbody>
+                             <tr>
 									<td width="100%" height="50" style="text-align: center;">
 										<img
 				src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/9fc53525-fbec-d92d-eeb5-61a71611b859.png"
@@ -198,62 +372,69 @@
 			  />
 									</td>
 								</tr>
-							</table><!-- End Space -->
-							
-							<!-- Main -->
-							<table width="400"  border="0" cellpadding="0" cellspacing="0" align="center" class="full" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; margin-top: -25px;">
-								<tr>
-									<td width="100%" style="border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; background-color: rgb(255, 255, 255);" bgcolor="#ffffff">
-							
-										<!-- Start Top -->
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#3d85b8"object="drag-module-small" style="border-top-right-radius: 6px; border-top-left-radius: 6px; background-color: rgb(61, 133, 184);">
-											<tr>
-												<td width="100%" valign="middle" align="center">
-													
-													<!-- Header Text --> 
-													<table width="280" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
-														<tr>
-															<td width="100%" height="35"></td>
-														</tr>
-														<tr>
-															<td valign="middle" width="100%" style="text-align: center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; color: rgb(255, 255, 255); line-height: 26px; font-weight: 700;" class="fullCenter" >
-																Quote request Notification
-															</td>
-														</tr>
-														<tr>
-															<td width="100%" height="10" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-														</tr>
-													</table>
-													
-												</td>
-											</tr>
-										</table>
-							
-										<!-- Image 113px -->
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#3d85b8" style="background-image: url('images/overlay1.png'); background-color: rgb(61, 133, 184); background-position: 50% 100%; background-repeat: repeat no-repeat;"object="drag-module-small">
-											<tr>
-												<td width="400" height="15" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-											</tr>
-											<tr>
-												<td width="400" valign="middle" style="text-align: center; line-height: 1px;" align="center">
-												
-													<table width="100" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
-														<tr>
-															<td width="100" height="35" align="center"  class="image113">
-																<a href="#">
-																	</a><a href="#" style="text-decoration: none;"><img src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/9ee42293-3552-602b-e3a2-500f7517235d.png" width="113" alt="" border="0" ></a>
-																
-															</td>
-														</tr>
-													</table>
-																				
-												</td>
-											</tr>
-										</table><!-- End Image 113px -->
-										
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgb(255, 255, 255);">
-											
-											<tr>
+                            </tbody>
+                          </table>
+                          <!-- End Space -->
+                          <!-- Main -->
+                          <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="full" style="-webkit-border-radius:6px;border-radius:6px; margin-top: -25px;">
+                            <tbody>
+                              <tr> 
+                                <td width="100%" style="border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;background-color:rgb(255, 255, 255);" bgcolor="#ffffff">
+                                  
+                                  <!-- Start Top -->
+                                  <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#3d85b8" style="border-top-right-radius:6px;border-top-left-radius:6px;background-color:rgb(61, 133, 184);">
+                                    <tbody>
+                                      <tr>
+                                        <td width="100%" valign="middle" align="center">
+                                          
+                                          <!-- Header Text -->
+                                          <table width="280" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align:center;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" class="fullCenter">
+                                            <tbody>
+                                              <tr>
+                                                <td width="100%" height="35"></td>
+                                              </tr>
+                                              <tr>
+                                                <td valign="middle" width="100%" style="text-align:center;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:18px;color:rgb(255, 255, 255);line-height:26px;font-weight:700;" class="fullCenter" mc:edit="27">
+                                                  Quote request Notification
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td width="100%" height="10" style="font-size:1px;line-height:1px;"> </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!-- Image 113px -->
+                                  <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#3d85b8" style="background-image:url('https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/e1cf51a2-d4b2-2033-5180-eb45724eb530.png');background-color:rgb(61, 133, 184);background-position:50% 100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td width="400" height="15" style="font-size:1px;line-height:1px;"> </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="400" valign="middle" style="text-align:center;line-height:1px;" align="center">
+                                          
+                                          <table width="100" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+                                            <tbody>
+                                              <tr>
+                                                <td width="100" height="35" align="center" class="image113">
+                                                  <a href="#">
+                                                    </a><a href="#" style="text-decoration:none;"><img src="https://mcusercontent.com/f5a4f8742a3de778e0ae12133/images/9ee42293-3552-602b-e3a2-500f7517235d.png" width="113" alt="" border="0" mc:edit="28"></a>
+                                                    
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!-- End Image 113px -->
+                                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff" style="background-color:rgb(255, 255, 255);">
+                                      <tbody>
+                                      <tr>
 												<td>
 													<div class="row">
 														<div class="col-5">
@@ -277,12 +458,10 @@
 														  </div>
 														</div>
 													  </div>
-													</div>
 												</td>
 											</tr>
-											<tr>
-												<td>
-													<form class="p-4">
+                                        <tr>
+												<td class="p-4">
 														<div class="form-row align-items-center">
 														  <div class="col-12 m-auto">
 															<div class="input-group mb-2">
@@ -484,13 +663,13 @@
 															</div>
 														  </div>
 														  <div class="col-12 m-auto">
-															<div class="p-1" style="display: flex; justify-content:
+															<div class="p-1 addition" style="display: flex; justify-content:
 															center; align-items: center; background-color: #E5F6FD;
-															color: #015EA3;">
+															color: #015EA3; text-align: center;">
 													<label class="pt-2">Additional Comments</label>
 														  </div>										
 														  <div class="input-group mb-2">
-															<div style="padding-top: 6px; padding-left: 10px; width: 100%; height: 80px" class="textbox">
+															<div style="padding-top: 6px; padding-left: 10px; width: 100%; height: 80px; border-top: none !important" class="textbox" >
 																<p
 																  disabled
 																  type="text"
@@ -499,113 +678,147 @@
 															  </div>
 														  </div>
 														</div>
-														
-													  </form>
 												</td>
 											</tr>
-										</table>
-										
-									
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgb(255, 255, 255);">
-											<tr>
-												<td width="100%" valign="middle" align="center">
-												
-													<table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
-														<tr>
-															<td width="100%" align="center"> 
-																<table border="0" cellpadding="0" cellspacing="0" align="center" class="buttonScale">
-																	<tr>
-																		<td align="center" height="40"  style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding-left: 25px; padding-right: 25px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 15px; font-weight: 700; line-height: 1px;">
-				 
-																			<!-- <input type="submit"  style="background-image: url(./Other\ Images/Button1.png);color: rgb(255, 255, 255); padding: 20px 10px !important; text-decoration: none; width: 100%;" /> -->
-																			<a class="btn btn-warning input-field">View All Quotes Now</a>
-																		</td>
-																	</tr>
-																</table>
-				
-															</td>
-														</tr>
-													</table>
-																				
-												</td>
-											</tr>
-										</table>
-										
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgb(255, 255, 255);">
-											<tr>
-												<td width="100%" valign="middle" align="center">
-												
-													<table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
-														<tr>
-															<td width="100%" height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-														</tr>
-														<tr>
-															<td valign="middle" width="100%" style="text-align: center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(95, 106, 116); line-height: 24px; font-weight: 400;" class="fullCenter" >
-																Google Sheets Quotes CRM 
-															</td>
-														</tr>
-													</table>
-																				
-												</td>
-											</tr>
-										</table>
-										
-										<table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; background-color: rgb(255, 255, 255);">
-											<tr>
-												<td width="100%" valign="middle" align="center">
-												
-													<table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
-														<tr>
-															<td width="100%" height="40"></td>
-														</tr>
-													</table>
-																					
-												</td>
-											</tr>
-										</table>
-										
-									</td>
-								</tr>
-							</table><!-- End Main -->
-							
-							<!-- CopyRight -->
-							<table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
-								<tr>
-									<td width="100%" height="25"></td>
-								</tr>
-								<tr>
-									<td valign="middle" width="100%" style="text-align: center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 12px; font-weight: 400; line-height: 18px;" class="fullCenter" >
-										<i>These are quotes requests emails</i><br> © 2021 iCleandogwash.com
-									</td>
-								</tr>
-							</table>
-							
-						
-							<table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="full" object="drag-module-small">
-								<tr>
-									<td width="100%" height="60" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-								</tr>
-								<tr>
-									<td width="100%" height="1" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
-								</tr>
-							</table><!-- End CopyRight -->
-							</div>
-				
-						</td>
-					</tr>
-				</table>
-				
-			</div>
-			</td>
-		</tr>
-	</table><!-- End Notification 4 -->
-	
-	<!-- Notification 5  -->
-	<div style="display: none" id="element_0510475987335667"></div><!-- End Notification 5 -->
-	
-	<!-- Notification 6  -->
-	<div style="display: none" id="element_05366499796509743"></div><!-- End Notification 6 -->
-	
-	
-	</div>
-	</body>	<style>body{ background: none !important; } </style>
+                                      </tbody>
+                                    </table>
+                                   
+                                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff" style="background-color:rgb(255, 255, 255);">
+                                      <tbody>
+                                        <tr>
+                                          <td width="100%" valign="middle" align="center">
+                                            
+                                        
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff" style="background-color:rgb(255, 255, 255);">
+                                      <tbody>
+                                        <tr>
+                                          <td width="100%" valign="middle" align="center">
+                                            
+                                            <table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align:center;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" class="fullCenter">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="100%" align="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="buttonScale">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class="bg-warning" align="center" height="40" bgcolor="#3d85b8" style="border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;padding-left:25px;padding-right:25px;font-family:'Open Sans', Helvetica, Arial, sans-serif;color:rgb(255, 255, 255);font-size:15px;font-weight:700;line-height:1px;background-color:rgb(61, 133, 184);" mc:edit="31">
+                                                            
+                                                            <a href="#"  style="color:rgb(255, 255, 255);text-decoration:none;width:100%;">View All Quotes Now</a>
+                                                            
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff" style="background-color:rgb(255, 255, 255);">
+                                      <tbody>
+                                        <tr>
+                                          <td width="100%" valign="middle" align="center">
+                                            
+                                            <table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align:center;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" class="fullCenter">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="100%" height="20" style="font-size:1px;line-height:1px;"> </td>
+                                                </tr>
+                                                <tr>
+                                                  <td valign="middle" width="100%" style="text-align:center;font-family:'Open Sans', Helvetica, Arial, sans-serif;font-size:13px;color:rgb(95, 106, 116);line-height:24px;font-weight:400;" class="fullCenter" mc:edit="32">
+                                                    Google Sheets Quotes CRM 
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table width="400" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff" style="border-bottom-right-radius:6px;border-bottom-left-radius:6px;background-color:rgb(255, 255, 255);">
+                                      <tbody>
+                                        <tr>
+                                          <td width="100%" valign="middle" align="center">
+                                            
+                                            <table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align:center;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;" class="fullCenter">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="100%" height="40"></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- End Main -->
+                            <!-- CopyRight -->
+                            <table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+                              <tbody>
+                                <tr>
+                                  <td width="100%" height="25"></td>
+                                </tr>
+                                <tr>
+                                  <td valign="middle" width="100%" style="text-align:center;font-family:'Open Sans', Helvetica, Arial, sans-serif;color:rgb(255, 255, 255);font-size:12px;font-weight:400;line-height:18px;" class="fullCenter" mc:edit="33">
+                                    <i>These are quotes requests emails</i><br> © 2021 iCleandogwash.com
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+                            
+                              <tbody>
+                                <tr>
+                                  <td width="100%" height="20" style="font-size:1px;line-height:1px;"> </td>
+                                </tr>
+                                <tr>
+                                  <td valign="middle" width="100%" style="text-align:center;font-family:'Open Sans', Helvetica, Arial, sans-serif;color:rgb(255, 255, 255);font-size:12px;font-weight:400;line-height:18px;" class="fullCenter" mc:edit="33_2">
+                                    <!--subscribe--><a href="#" style="color:rgb(255, 255, 255);"></a>
+                                    <!--unsub-->
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+                              <tbody>
+                                <tr>
+                                  <td width="100%" height="60" style="font-size:1px;line-height:1px;"> </td>
+                                </tr>
+                                <tr>
+                                  <td width="100%" height="1" style="font-size:1px;line-height:1px;"> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- End CopyRight -->
+                          </div>
+                          
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Notification 4 -->
+        <!-- Notification 5  -->
+        <div style="display:none;" id="element_007287634257227182"></div>
+        <!-- End Notification 5 -->
+        <!-- Notification 6  -->
+        <div style="display:none;" id="element_036387894093059003"></div>
+        <!-- End Notification 6 -->
+      </div>
+    </body>
+</html>
